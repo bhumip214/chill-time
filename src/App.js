@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         {/* <NavBar /> */}
+        <h1>Chill Time</h1>
         <Route exact path="/" component={Home} />
-
         <Route exact path="/new-releases" component={NewReleases} />
         <Route exact path="/top-rated" component={TopRated} />
         <Route exact path="/popular-movies" component={PopularMovies} />
