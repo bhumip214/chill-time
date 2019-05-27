@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Route, withRouter } from "react-router-dom";
-import NavBar from "./Components/NavBar/NavBar";
 import Home from "./Components/Home/Home";
 import NewReleases from "./Components/Categories/NewReleases";
 import TopRated from "./Components/Categories/TopRated";
@@ -12,8 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <NavBar /> */}
-        <h1>Chill Time</h1>
+        <h1>CHILL TIME</h1>
         <Route exact path="/" component={Home} />
         <Route exact path="/new-releases" component={NewReleases} />
         <Route exact path="/top-rated" component={TopRated} />

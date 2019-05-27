@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { css, cx } from "emotion";
+import MovieList from "../MovieList/MovieList";
 
 class TopRated extends Component {
   constructor(props) {
@@ -26,21 +26,7 @@ class TopRated extends Component {
     return (
       <div>
         <h2> Top Rated </h2>
-        <div className="row">
-          {this.state.topRatedMovies.map(topRatedMovie => {
-            return (
-              <div className="cards" key={topRatedMovie.id}>
-                <img
-                  src={topRatedMovie.poster_path}
-                  alt={topRatedMovie.original_title}
-                  height="230"
-                  width="300"
-                />
-                <h3>{topRatedMovie.title}</h3>
-              </div>
-            );
-          })}
-        </div>
+        <MovieList movies={this.state.topRatedMovies} />
       </div>
     );
   }

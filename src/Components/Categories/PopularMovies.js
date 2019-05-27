@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { css, cx } from "emotion";
+import MovieList from "../MovieList/MovieList";
 
 class PopularMovies extends Component {
   constructor(props) {
@@ -26,21 +26,7 @@ class PopularMovies extends Component {
     return (
       <div>
         <h2> Popular Movies </h2>
-        <div className="row">
-          {this.state.popularMovies.map(popularMovie => {
-            return (
-              <div className="cards" key={popularMovie.id}>
-                <img
-                  src={popularMovie.poster_path}
-                  alt={popularMovie.original_title}
-                  height="230"
-                  width="300"
-                />
-                <h3>{popularMovie.title}</h3>
-              </div>
-            );
-          })}
-        </div>
+        <MovieList movies={this.state.popularMovies} />
       </div>
     );
   }

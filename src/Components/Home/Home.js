@@ -11,11 +11,11 @@ class Home extends React.Component {
       <div>
         <NewReleases />
 
-        {/* <TopRated /> */}
+        <TopRated />
 
-        {/* <PopularMovies /> */}
+        <PopularMovies />
 
-        {/* <TVShows /> */}
+        <TVShows />
       </div>
     );
   }

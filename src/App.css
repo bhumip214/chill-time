@@ -1,25 +1,24 @@
-body{
-  background-color: black;
+body {
+  background-color: #111;
 }
-  
+
 h1 {
-  font-size: 30px;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: #35d2cd;
 }
 
 h2 {
   font-size: 25px;
-  padding: 20px;
   padding-bottom: 0;
 }
-
-
 
 p {
   font-size: 16px;
 }
 
 .App {
-  /* text-align: center; */
   color: white;
   min-height: 100vh;
   padding: 40px;
@@ -31,35 +30,26 @@ p {
 
 .row {
   display: flex;
-  /* flex-wrap: wrap; */
+  margin-bottom: 40px;
 }
 
-navLinks{
-
-}
-/* .card {
-
-  margin: 3px;
-  cursor: pointer;
-} */
-
-img{
-  width: 230px;
-  height: 230px;
+img {
+  height: 250px;
   margin: 3px;
   cursor: pointer;
   transition: all 0.2s;
   transition-delay: 0.1s;
+  object-fit: contain;
 }
 
-img:hover{
+img:hover {
   transform: scale(1.4);
 }
 
-.img-animate-right{
-  transform: translate(50px);
+.img-animate-right {
+  transform: translate(35px);
 }
 
-.img-animate-left{
-  transform: translate(-50px);
+.img-animate-left {
+  transform: translate(-35px);
 }
